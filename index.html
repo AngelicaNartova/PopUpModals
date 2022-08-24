@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS CSS Popup modal</title>
+    <link rel="stylesheet" href="main.css" />
+</head>
+<body>
+    <div class="page">
+        <div class="button large popup-button" data-popup="#popup-main">Main Popup</div>
+        <div class="button large popup-button" data-popup="#popup-secondary">Secondary Popup</div>
+    </div>
+
+    <div class="popup" id="popup-main">
+        <div class="popup-overlay popup-button" data-popup="#popup-main"></div>
+        <div class="popup-inner">
+            <h2>Popup Main Title</h2>
+            <h3>Main Subtitle</h3>
+            <p>A woman finds a pot of treasure on the road while she is returning from work. Delighted (very happy) with her luck, 
+                she decides to keep it. As she is taking it home, it keeps changing. However, her enthusiasm refuses to fade away 
+                (disappear or faint slowly).</p>
+            <button class="button popup-button" data-popup="#popup-main">Close</button>
+        </div>
+    </div>
+
+    <div class="popup" id="popup-secondary">
+        <div class="popup-overlay popup-button" data-popup="#popup-secondary"></div>
+        <div class="popup-inner">
+            <h2>Popup Secondary Title</h2>
+            <h3>Secondary Subtitle</h3>
+            <p>What Is Great About It: The old lady in this story is one of the most cheerful characters anyone can encounter 
+                in English fiction. Her positive disposition (personality) tries to make every negative situation seem like a 
+                gift, and she helps us look at luck as a matter of our view rather than events.</p>
+            <button class="button popup-button" data-popup="#popup-secondary">Close</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
